@@ -1,74 +1,91 @@
 {
-	"heroes": [
-		{ 
-            "id": "marvel-spider",
-            "name": "Spider Man",
-            "publisher": "Marvel Comics",
-            "alter_ego": "Peter Parker",
-            "characters": "Peter Parker"
-        },
-		{ 
-            "id": "dc-wonder",
-            "name": "Wonder Woman",
-            "publisher": "DC Comics",
-            "alter_ego": "Princess Diana",
-            "characters": "Princess Diana"
-        },
-		{
-            "id": "marvel-captain",
-            "name": "Captain America",
-            "publisher": "Marvel Comics",
-            "alter_ego": "Steve Rogers",
-            "characters": "Steve Rogers"
-          },
-          {
-            "id": "marvel-iron",
-            "name": "Iron Man",
-            "publisher": "Marvel Comics",
-            "alter_ego": "Tony Stark",
-            "characters": "Tony Stark"
-          },
-          {
-            "id": "marvel-hulk",
-            "name": "Hulk",
-            "publisher": "Marvel Comics",
-            "alter_ego": "Bruce Banner",
-            "characters": "Bruce Banner"
-          },
-          {
-            "id": "marvel-thor",
-            "name": "Thor",
-            "publisher": "Marvel Comics",
-            "alter_ego": "Thor Odinson",
-            "characters": "Thor Odinson"
-          },
-          {
-            "id": "dc-black",
-            "name": "Black Canary",
-            "publisher": "DC Comics",
-            "alter_ego": "Dinah Drake",
-            "characters": "Dinah Drake, Dinah Lance"
-          },
-          {
-            "id": "dc-flash",
-            "name": "Flash",
-            "publisher": "DC Comics",
-            "alter_ego": "Jay Garrick",
-            "characters": "Jay Garrick, Barry Allen"
-          },
-          {
-            "id": "dc-batman",
-            "name": "dc-batman",
-            "publisher": "DC Comics",
-            "alter_ego": "Bruce Wayne",
-            "characters": "Bruce Wayne"
-          },
-          {
-            "id": "dc-superman",
-            "name": "Superman",
-            "publisher": "DC Comics",
-            "alter_ego": "Kal-El",
-            "characters": "Kal-El"
-          }
-	]
+  "heroes": [
+    {
+      "id": "marvel-spider",
+      "name": "Spider Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Peter Parker",
+      "characters": "Peter Parker"
+    },
+    {
+      "id": "dc-wonder",
+      "name": "Wonder Woman",
+      "publisher": "DC Comics",
+      "alter_ego": "Princess Diana",
+      "characters": "Princess Diana"
+    },
+    {
+      "id": "marvel-captain",
+      "name": "Captain America",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Steve Rogers",
+      "characters": "Steve Rogers"
+    },
+    {
+      "id": "marvel-iron",
+      "name": "Iron Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tony Stark",
+      "characters": "Tony Stark"
+    },
+    {
+      "id": "marvel-hulk",
+      "name": "Hulk",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Bruce Banner",
+      "characters": "Bruce Banner"
+    },
+    {
+      "id": "marvel-thor",
+      "name": "Thor",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Thor Odinson",
+      "characters": "Thor Odinson"
+    },
+    {
+      "id": "dc-black",
+      "name": "Black Canary",
+      "publisher": "DC Comics",
+      "alter_ego": "Dinah Drake",
+      "characters": "Dinah Drake, Dinah Lance"
+    },
+    {
+      "id": "dc-flash",
+      "name": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "characters": "Jay Garrick, Barry Allen"
+    },
+    {
+      "id": "dc-batman",
+      "name": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "characters": "Bruce Wayne"
+    },
+    {
+      "id": "dc-superman",
+      "name": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Kal-El",
+      "characters": "Kal-El"
+    },
+    {
+      "id": "marvel-wolverine",
+      "name": "Wolverine",
+      "publisher": "Marvel Comics",
+      "alter_ego": "James Howlett",
+      "characters": "Hugh Michael Jackman"
+    },
+    {
+      "id": "dc-green",
+      "name": "Green Lantern",
+      "publisher": "DC Comics",
+      "alter_ego": "Hal Jordan",
+      "characters": "Alan Scott "
+    }
+
+    
+    
+  ]
 }

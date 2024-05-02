@@ -58,7 +58,7 @@
     },
     {
       "id": "dc-batman",
-      "name": "dc-batman",
+      "name": "Batman",
       "publisher": "DC Comics",
       "alter_ego": "Bruce Wayne",
       "characters": "Bruce Wayne"
@@ -69,6 +69,23 @@
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "characters": "Kal-El"
+    },
+    {
+      "id": "marvel-wolverine",
+      "name": "Wolverine",
+      "publisher": "Marvel Comics",
+      "alter_ego": "James Howlett",
+      "characters": "Hugh Michael Jackman"
+    },
+    {
+      "id": "dc-green",
+      "name": "Green Lantern",
+      "publisher": "DC Comics",
+      "alter_ego": "Hal Jordan",
+      "characters": "Alan Scott "
     }
+
+    
+    
   ]
 }
