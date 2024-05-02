@@ -1,0 +1,29 @@
+<div  class="p-col-12 p-sm-6 flex flex-column p-3">
+    <mat-form-field>
+        <mat-label>Buscar héroe</mat-label>
+        <input 
+            #query
+            (input)="onQueryChanged(query.value)"
+            type="text"
+            matInput
+            [formControl]="filterInput"
+            [matAutocomplete]="auto"
+        />
+        <mat-autocomplete autoActiveFirstOption 
+            #auto="matAutocomplete"
+            (optionSelected)="onSelectedOption($event)">
+                <mat-option *ngFor="let hero of heroes" [value]="hero">
+                    {{hero.name}}
+                </mat-option>
+            <mat-option
+            *ngIf="heroes.length === 0 && filterInput.value && filterInput.value.length > 0">
+                No se encontró ningun héroe con el nombre {{filterInput.value}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+    <div *ngIf="selectedHero" class="grid justify-content-center bm-8">
+        <div class="col-12 sm:col-4 md:col-3 xl:col-2">
+            <app-card-hero [hero]="selectedHero"></app-card-hero>  
+        </div> 
+    </div>
+</div>

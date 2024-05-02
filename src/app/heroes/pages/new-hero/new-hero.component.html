@@ -1,0 +1,89 @@
+<h1>
+    {{ currentHero.id ? 'Editar' : 'Agregar' }}
+    héroe
+    <small *ngIf="currentHero.id">{{ currentHero.name }}</small>
+  </h1>
+<mat-divider class="mb-2"></mat-divider>
+<div class="grid">
+    <div class="col-12 sm:col-6">
+        <mat-card>
+            <mat-card-content>
+                <form class="grid" [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+                    <mat-form-field class="col-12 sm:col-6">
+                        <mat-label>Super héroe</mat-label>
+                        <input 
+                        matInput
+                        type="text"
+                        required
+                        formControlName="name"
+                        (input)="onNameInput($event)"
+                        >
+                    </mat-form-field>
+                    <mat-form-field  class="col-12 sm:col-6">
+                        <mat-label>Alter Ego</mat-label>
+                        <input 
+                        matInput
+                        type="text"
+                        required
+                        formControlName="alter_ego"
+                        >
+                    </mat-form-field>
+                    <mat-form-field class="col-12">
+                        <mat-label>Personajes</mat-label>
+                        <input 
+                        matInput
+                        type="text"
+                        required
+                        formControlName="characters"
+                        >
+                    </mat-form-field>
+                    <mat-form-field class="col-12">
+                        <mat-label>Creador</mat-label>
+                        <mat-select required
+                        formControlName="publisher">
+                                <mat-option *ngFor="let publisher of publishersMock"
+                                [value]="publisher.id">
+                                {{publisher.des}}
+                                </mat-option>
+                        </mat-select>
+                    </mat-form-field> 
+                    <mat-form-field class="col-12">
+                        <mat-label>URL de imagen - (Asegúrate de que la extensión sea .jpg)</mat-label>
+                        <input
+                          matInput
+                          type="text"
+                          formControlName="alt_img"
+                        />
+                        
+                      </mat-form-field>
+                </form>
+                <!-- //Botones para editar,borrar y guardar -->
+                <div  class="col-10 flex justify-content-around m-2">
+                    <button *ngIf="currentHero.id"
+                    (click)="onDeleteHero()"
+                    mat-flat-button
+                    color="warn">
+                        Borrar
+                    </button>
+                    <mat-divider></mat-divider>
+                    
+                    <button 
+                    mat-flat-button 
+                    color="primary"
+                    (click)="onSubmit()"
+                    [disabled]="heroForm.invalid">
+                        Guardar
+                        </button>
+                </div>  
+                
+            </mat-card-content>
+        </mat-card>
+    </div>
+    <div class="col-12 sm:col-6">
+        <mat-card style="width: 50%;">
+          <img [src]="currentHero | appHeroImage" alt="imagen del héroe" mat-card-image >
+        </mat-card>
+    
+    </div>
+</div>
+
