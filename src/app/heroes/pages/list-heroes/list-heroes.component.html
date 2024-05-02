@@ -2,12 +2,20 @@
   <p class="font-italic">Lista de héroes</p>
 </mat-toolbar>
 <mat-divider></mat-divider>
+
+<ng-template #load>
+  <mat-grid-list cols="1">
+      <mat-grid-tile>
+          <mat-spinner>
+          </mat-spinner>
+      </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>
+
+<ng-container *ngIf="heroes$ | async as heroes; else load">
   <div class="grid bm-8">
     <div *ngFor="let hero of heroes" class="col-12 sm:col-4 md:col-3 xl:col-2">
       <app-card-hero [hero]="hero" class="flex-grow-1"></app-card-hero>  
     </div> 
   </div>
-
-
-  
-
+</ng-container>
