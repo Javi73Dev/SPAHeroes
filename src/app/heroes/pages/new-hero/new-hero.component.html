@@ -1,8 +1,9 @@
-<h1>
+<mat-toolbar color="basic text-green-800">
     {{ currentHero.id ? 'Editar' : 'Agregar' }}
     héroe
-    <small *ngIf="currentHero.id">{{ currentHero.name }}</small>
-  </h1>
+    <p *ngIf="currentHero.id">{{ currentHero.name }}</p>
+</mat-toolbar>
+
 <mat-divider class="mb-2"></mat-divider>
 <div class="grid">
     <div class="col-12 sm:col-6">
